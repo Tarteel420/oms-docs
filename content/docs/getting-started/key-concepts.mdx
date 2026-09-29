@@ -1,0 +1,59 @@
+---
+title: Key Concepts
+description: The core ideas and terms the whole system relies on.
+---
+
+A few ideas appear on almost every screen of EZ-OMS. Understanding them first makes the rest of this guide much easier to follow.
+
+## Recycling kits
+
+A **recycling kit** is a container that a customer fills with recyclable waste — for example, a bucket for dry cell batteries or a box for lamps. Each kind of kit is set up as a **product** (also called a **kit type**) in the [product catalog](/docs/products).
+
+## Bundles and return kits
+
+Every kit order is split into two parts:
+
+| Part | What it is | Direction |
+| --- | --- | --- |
+| **Bundle** | The packaging shipped out to the customer, containing the empty kits. | Warehouse → Customer |
+| **Return kit** | The individual kit the customer fills and sends back. Each has its own tracking number. | Customer → Warehouse |
+
+An order can contain several bundles, and each bundle can contain several return kits. See [Bundles and Return Kits](/docs/orders/bundles-and-return-kits).
+
+## Labels and tracking numbers
+
+Each order uses two kinds of shipping labels:
+
+- **Outbound label** — addressed to the customer; used to ship the bundle out.
+- **Inbound (return) label** — addressed to the warehouse; placed in the shipment so the customer can send each filled kit back.
+
+Every return kit gets a unique **tracking number** and a unique **container number** (container ID). The container number is what customers enter to download their certificate, and kits are scanned by their Unique ID during assembly. See [Shipping Labels](/docs/orders/shipping-labels).
+
+## The account hierarchy
+
+Orders belong to accounts arranged in tiers:
+
+```
+Distributor
+ ├── Reseller
+ │    └── Customer
+ └── Customer
+```
+
+- A **distributor** is a company that provides recycling kits to its resellers and customers.
+- A **reseller** sits under a distributor and sells kits on to its own customers.
+- A **customer** is the end user who receives the kit, fills it and ships it back.
+
+See [Account Hierarchy](/docs/management) for more.
+
+## Statuses
+
+Each order has a status that changes as it moves through its journey — for example, **Ready to Print**, **Printed**, **In Assembly**, **Shipped** and **Completed**. See [Order Statuses](/docs/orders/order-statuses).
+
+## Certificate of recycling
+
+When a return kit has been delivered, a **certificate of recycling** can be issued for its container. See [Certificate of Recycling](/docs/reports/certificate-of-recycling).
+
+<Callout title="More terms">
+  For a full list of terms, see the [Glossary](/docs/resources/glossary).
+</Callout>

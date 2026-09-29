@@ -1,0 +1,36 @@
+---
+title: Add a Product
+description: Create a recycling kit product for a distributor.
+---
+
+1. Open **Products** in the sidebar.
+2. Select **Add Product**. The **Add New Product** form opens.
+
+<Screenshot
+  file="products/add-product.png"
+  title="Add New Product"
+  description="The Add New Product form with product code, descriptions, prices, distributor, category and image upload."
+/>
+
+## Fields
+
+| Field | Required | Notes |
+| --- | --- | --- |
+| **Product Code** | Yes | The SKU, for example `35BT`. |
+| **Short Description** | Yes | Shown as the product name. |
+| **Long Description** | Yes | Full description. |
+| **List Price** | Yes | Standard price. |
+| **Negotiated Price** | Yes | The distributor's price. |
+| **Distributor** | Yes | Which distributor the product belongs to. |
+| **Category** | No | Defaults to **No Category**. See [Product Categories](/docs/products/product-categories). |
+| **Upload Image** | No | A picture of the kit. |
+
+3. Select **Create** to save, or **Cancel** to close.
+
+## What happens next
+
+The product becomes available for that distributor's orders — see [Create an Order](/docs/orders/create-an-order) — and can be included in the distributor's [auto-reorder](/docs/management/auto-reorder) settings.
+
+<Callout type="info">
+  To offer the same kit to another distributor, add it again for that distributor with its own prices.
+</Callout>

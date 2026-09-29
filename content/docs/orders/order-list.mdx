@@ -1,0 +1,63 @@
+---
+title: Order List
+description: Search, filter, sort, select and export orders on Orders Management.
+---
+
+Select **Orders** under **Overview** in the sidebar to open **Orders Management**.
+
+<Screenshot
+  file="orders/order-list.png"
+  title="Orders Management — order list"
+  description="Quick filter buttons at the top right, the search and filter panel, and the order table."
+/>
+
+## Buttons at the top
+
+| Button | What it does |
+| --- | --- |
+| **Needs Review** | Shows only orders flagged **Needs Review**. Click again to turn the filter off. |
+| **Ready to Invoice** | Shows only orders flagged **Ready to Invoice**. |
+| **New Order** | Opens the **Create New Order** form. See [Create an Order](/docs/orders/create-an-order). |
+| **Scan Kits** | Opens the **Scan ID** page. See [Scan Kits](/docs/orders/scan-kits). |
+
+## Search and filters
+
+| Filter | Use it to |
+| --- | --- |
+| **Search** | Find orders by Order ID, customer or PO number. |
+| **Status** | Show orders in one status. Each status shows how many orders it holds. See [Order Statuses](/docs/orders/order-statuses). |
+| **Distributor** | Show orders for one distributor. |
+| **Shipping City** | Filter by the ship-to city. |
+| **Tracking Number** | Find the order a tracking number belongs to. |
+| **Order Date From / To** | Filter by the order date. |
+| **Order Created From / To** | Filter by the date the order was entered in EZ-OMS. |
+
+When any filter is active, a **Clear Filters** button appears.
+
+## Columns
+
+| Column | Shows |
+| --- | --- |
+| **Order ID** | The order number, plus badges such as **Amazon**, **Needs Review** or **Ready to Invoice**. |
+| **Order Date** | The date on the order. |
+| **Created At** | When the order was entered in EZ-OMS. The list is sorted by this column, newest first. |
+| **Customer** | The ship-to customer. |
+| **Ship To (City/State/Zip)** | The delivery location. |
+| **PO Number** | The customer's purchase order number (Amazon order number for Amazon orders). |
+| **Distributor** | The distributor the order belongs to. |
+| **Total** | The order value. |
+| **Status** | The current status, with a dropdown to change it. See [Change Order Status](/docs/orders/change-order-status). |
+| **Notes** | **Add Notes** or **View/Edit** if notes exist. See [Order Notes](/docs/orders/order-notes). |
+| **Actions** | **View Details**, and **Revert to Ready to Ship** for shipped orders. |
+
+Select a column header to sort by it. Use the rows-per-page setting and page numbers at the bottom to move through the list.
+
+## Select and export orders
+
+1. Tick the checkbox next to one or more orders (or the header checkbox to select the page).
+2. Choose **Export PDF (n)** or **Export Excel (n)**, where *n* is the number of selected orders.
+3. Select **Deselect All** to clear the selection.
+
+## Open an order
+
+Select **View Details** in the **Actions** column. See [Order Details](/docs/orders/order-details).

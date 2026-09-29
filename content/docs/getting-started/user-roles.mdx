@@ -1,0 +1,38 @@
+---
+title: User Roles
+description: The roles a user can have, and how access is separated.
+---
+
+Every user has **one role**, assigned in [User Management](/docs/management/user-management) with **Manage Roles**. A user can also be linked to a **distributor**, so they only work with that distributor's data.
+
+## Roles in the application
+
+| Role | Description shown in the app | Who it's for |
+| --- | --- | --- |
+| **superadmin** | Administrator with full access | The development team. |
+| **admin** | Standard user with limited access | The main business users. |
+| **manager** | — | Staff who need access to distributors and their orders. |
+| **user** | — | General users. |
+
+<Callout type="info">
+  The exact screens each role can open are not listed in the application. If you get an **Access denied** page, ask an administrator to check your role.
+</Callout>
+
+## Distributor access
+
+Distributors can be supported in two ways:
+
+- **Direct access** — the distributor gets its own login (a password is set when the [distributor is created](/docs/management/distributors)), and manages its own orders.
+- **Managed by staff** — internal staff manage orders on the distributor's behalf.
+
+## Customer access
+
+Customer logins are being piloted with a small number of customers. See [Customer Ordering](/docs/orders/customer-ordering).
+
+## Data separation
+
+Distributors only see their own data; customers only see their own orders.
+
+<Callout type="warn" title="Differences from the SRS">
+  The SRS describes Admin, Distributor, Reseller, Warehouse Manager and Customer roles. The live application's role list is **superadmin**, **admin**, **manager** and **user**.
+</Callout>

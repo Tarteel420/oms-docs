@@ -1,0 +1,51 @@
+---
+title: Consolidated Invoice
+description: Create consolidated invoices and export them to Excel.
+---
+
+Select **Consolidated Invoice** under **Reports** to open **Consolidated Invoice Report**.
+
+<Screenshot
+  file="reports/consolidated-invoice.png"
+  title="Consolidated Invoice Report"
+  description="The list of consolidated invoices with the New Invoice button and the How to use panel."
+/>
+
+## The invoice list
+
+Invoices are sorted most recent first.
+
+| Column | Shows |
+| --- | --- |
+| **Id** | Record ID. |
+| **Distributor** | Distributor billed. |
+| **Reseller / Sub Reseller / End Customer** | Optional narrower scope. |
+| **Invoice Begin Date / Invoice End Date** | Period covered. |
+| **Invoice Number** | The invoice number. |
+| **Amount** | Invoice total. |
+
+## Download an invoice report
+
+1. Select the invoice's row. **Selected Invoice Details** appears below the table.
+2. Select **Download Excel Report**.
+
+The Excel file has a **COVER** sheet (invoice summary) and a **SUMMARY** sheet (detailed orders).
+
+## Create a consolidated invoice
+
+1. Select **New Invoice**. The **New Consolidated Invoice** form opens.
+2. Fill in the sections:
+
+| Section | Fields |
+| --- | --- |
+| Invoice Information | **Distributor \***, Reseller, Sub Reseller, End Customer, **Invoice Number \***, Invoice Amount, **Invoice Begin Date \***, **Invoice End Date \***, Customer PO Number, Order Id, Email To |
+| Generator Information | Generator Name, Address, City, State, Zip, Generator Customer Id |
+| Processing & Audit (optional) | Waiting To Process, Waiting To Reprocess, Processed Date/By, Reprocessed Date/By, Created Date/By |
+
+3. Select **Add Invoice**.
+
+<Screenshot
+  file="reports/new-consolidated-invoice.png"
+  title="New Consolidated Invoice"
+  description="The New Consolidated Invoice form showing the Invoice Information and Generator Information sections."
+/>

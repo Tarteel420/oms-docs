@@ -1,0 +1,31 @@
+---
+title: Customer Ordering Overview
+description: The self-service area where customers browse kits, place orders and track returns.
+---
+
+EZ-OMS includes a self-service area for **end customers**. Customers with access can choose the recycling kits they need, enter their details and place an order themselves, then follow their kits as they are returned.
+
+<Callout type="info" title="Pilot feature">
+  Direct customer access is currently being tested with a small number of customers. Some distributors want their customers to order directly to simplify the ordering process. Customer orders are otherwise created by staff — see [Create an Order](/docs/orders/create-an-order).
+</Callout>
+
+<Callout type="warn" title="Based on the SRS">
+  The app contains **Checkout** and **Order Confirmation** pages, but the customer view wasn't available to the staff account used for this guide (the checkout page returns to Products when the cart is empty). The pages in this section follow the SRS and the demo; screen labels may differ.
+</Callout>
+
+## What customers can do
+
+<Cards>
+  <Card title="Browse Kits" href="/docs/orders/customer-ordering/browse-kits" description="Find recycling kits from their distributor's catalog." />
+  <Card title="Cart and Checkout" href="/docs/orders/customer-ordering/cart-and-checkout" description="Add kits to a cart and place an order." />
+  <Card title="My Orders and Tracking" href="/docs/orders/customer-ordering/my-orders-and-tracking" description="View order history and follow return kits." />
+</Cards>
+
+## What customers cannot do
+
+- Customers only see **their own** orders and kits.
+- Customers cannot manage other customers.
+
+<Callout type="warn" title="Conflicting requirements">
+  One section of the requirements states that customers cannot create orders and that orders are created by distributors or admins, while the self-service checkout requirement allows customers to submit a draft order. The demo confirms customers can place orders where access has been given. Confirm with your administrator which applies to your account.
+</Callout>

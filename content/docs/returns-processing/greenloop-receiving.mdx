@@ -1,0 +1,35 @@
+---
+title: GreenLoop Receiving
+description: How the warehouse records received products in GreenLoop.
+---
+
+EZ-OMS holds the **order and tracking records**. The **receiving** side — recording products as they physically arrive — is tracked in **GreenLoop**, the system used by the warehouse.
+
+## How the two systems work together
+
+| System | Records |
+| --- | --- |
+| **EZ-OMS** | Orders, bundles, return kits and tracking numbers. |
+| **GreenLoop** | Products received at the warehouse. |
+
+GreenLoop and EZ-OMS are **connected**. Products marked as received in GreenLoop can then be invoiced to the customer. See [Invoicing](/docs/reports/invoicing).
+
+## Record received products
+
+1. In GreenLoop, open the **Receiving** area.
+2. Mark the products that have been received.
+
+<Screenshot
+  file="returns-processing/greenloop-receiving.png"
+  title="GreenLoop — Receiving"
+  description="The GreenLoop Receiving screen listing products that have been received at the warehouse."
+/>
+
+<Callout type="info" title="Which GreenLoop?">
+  The GreenLoop version connected to EZ-OMS is the current production version. A newer GreenLoop is in development and is planned to replace it later.
+</Callout>
+
+## Related pages
+
+- [Return Kits](/docs/returns-processing/return-kits)
+- [Integrations](/docs/resources/integrations#greenloop)

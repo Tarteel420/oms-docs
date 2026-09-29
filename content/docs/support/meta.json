@@ -1,0 +1,5 @@
+{
+  "title": "Support",
+  "root": true,
+  "pages": ["index", "create-a-ticket", "manage-tickets"]
+}

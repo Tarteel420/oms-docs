@@ -1,0 +1,47 @@
+---
+title: Documentation Notes
+description: Sources for this guide, differences between them, and open questions.
+---
+
+## Sources
+
+This guide is based on:
+
+1. A read-only walkthrough of the live EZ-OMS application (every sidebar page, its forms and dialogs), September 2026.
+2. The EZ-OMS product demo (23 Sep 2026).
+3. The EZ-OMS Software Requirements Specification (SRS v1.0, 10 Jan 2026).
+
+Where they differ, the guide follows the **live application**.
+
+## Differences between the SRS and the live app
+
+| Topic | SRS | Live application |
+| --- | --- | --- |
+| **Order statuses** | Draft, Submitted, Shipped, Received, Completed, Cancelled | 19 statuses — see [Order Statuses](/docs/orders/order-statuses) |
+| **Roles** | Admin, Distributor, Reseller, Warehouse Manager, Customer | superadmin, admin, manager, user — see [User Roles](/docs/getting-started/user-roles) |
+| **Kit receiving** | Warehouse scans kits in EZ-OMS on arrival | **Scan ID** marks kits *assembled* before shipping; received products are recorded in GreenLoop |
+| **Certificates** | Generated for received and processed orders | Issued per container on **Certificate of Recycling**; customers can download from `/recycle` |
+| **Reports** | Kit Distribution, Return Tracking, Warehouse Receipt, Recycling Metrics, Warehouse Operations | Shipping Analytics, Safety-Kleen, Consolidated Invoice, Recycling Annual, Certificate of Recycling |
+
+## Features found in the app that the SRS doesn't describe
+
+- [Auto-Reorder](/docs/management/auto-reorder) per distributor.
+- [Complaints](/docs/support) ticketing.
+- [Scan Kits](/docs/orders/scan-kits) assembly scanning.
+- Invoicing with **Ready to Invoice** and **Invoices Report**.
+- Distributor logins created from the Distributors page.
+- The [ShipNest Integration](/docs/resources/integrations#shipnest-integration-page) settings page.
+
+## Open questions
+
+- **Product list:** Product Management showed **No products found** during the walkthrough, although the Dashboard counts more than 5,000 products.
+- **Status rules:** what moves an order automatically from one status to the next isn't documented.
+- **Role permissions:** which pages each role can open isn't shown in the app.
+- **Customer self-service:** the checkout pages exist, but the customer view wasn't available to the walkthrough account.
+- **Shipping Analytics:** report columns weren't captured, because a report wasn't generated during the walkthrough.
+
+## Screenshots
+
+Most screens now show real screenshots captured during the walkthrough. Screens not captured still show a placeholder with the file path it expects — save an image at that path under `public/screenshots/` and rebuild.
+
+Screenshots may include real customer, order and distributor details. Review them before publishing the site outside the company.

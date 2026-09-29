@@ -1,0 +1,58 @@
+---
+title: Order Details
+description: Everything about a single order, section by section.
+---
+
+Open an order by selecting **View Details** in the [order list](/docs/orders/order-list). The page address is `/dashboard/order/<order number>`.
+
+<Screenshot
+  file="orders/order-details.png"
+  title="Order details — top of page"
+  description="The order header with the status dropdown and action buttons, the Order Information and Shipping Information cards, and the Notes card."
+/>
+
+## Header
+
+Shows **Back to Orders**, the order number, source badge (for example **Amazon**), the **status dropdown** and the **Created** date.
+
+| Button | What it does |
+| --- | --- |
+| **Revert to Ready to Ship** | Shown on shipped orders. Moves the order back to **Ready to Ship**. |
+| **Upload** | Upload a PDF for this order. See [Order Documents](/docs/orders/order-documents). |
+| **Print** | Print the uploaded PDF. |
+| **Edit Order** | Edit the order. Only available when the status is **Not Specified** or **Aggregated**. |
+| **Export PDF** | Export the order as a PDF. |
+
+## Order Information
+
+**Order Date**, **Distributor**, **PO Number**, **Need Date** and **Total Cost**. The **Cancel order** button is here — see [Update or Cancel an Order](/docs/orders/update-or-cancel-an-order).
+
+## Shipping Information
+
+**Ship To** (name, attention line, address) and **Contact** (phone).
+
+## Notes
+
+Free-text notes about the order, saved with **Save Notes**. See [Order Notes](/docs/orders/order-notes).
+
+## Invoicing
+
+Shows the invoicing state, for example **Awaiting tracking**. **Add invoice** lets you invoice the order straight away, even before tracking confirms movement. See [Invoicing](/docs/reports/invoicing).
+
+<Screenshot
+  file="orders/order-items-bundles.png"
+  title="Order details — invoicing, items and bundles"
+  description="The Invoicing card, the Order Items table and the top of the Bundles & Kits section with Kit Status."
+/>
+
+## Order Items
+
+The products on the order with **SKU**, **Description**, **Quantity**, **Unit Price** and **Total**, plus the **Order Total**. See [Order Items](/docs/orders/order-items).
+
+## Bundles & Kits
+
+Kit status, bundle shipping details, shipment tracking and the return kits. See [Bundles and Return Kits](/docs/orders/bundles-and-return-kits).
+
+## Moving between orders
+
+Use **Previous Order** and **Next Order** at the bottom of the page.

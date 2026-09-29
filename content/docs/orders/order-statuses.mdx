@@ -1,0 +1,48 @@
+---
+title: Order Statuses
+description: Every order status in EZ-OMS and what its name indicates.
+---
+
+The **Status** filter on the [order list](/docs/orders/order-list) contains these statuses, in this order. The number of orders in each status is shown next to it in the app.
+
+| Status | What it indicates |
+| --- | --- |
+| **Not Specified** | No status set. Orders in this status can be edited. |
+| **Aggregated** | Orders in this status can be edited. |
+| **Awaiting Tracking** | Waiting for tracking numbers. |
+| **Waiting Tracking** | Waiting for tracking numbers. |
+| **Assigned Track** | Tracking numbers assigned. |
+| **Waiting Labels** | Waiting for labels. |
+| **Ready to Print** | Labels ready to print. |
+| **Printed** | Labels printed. |
+| **In Assembly** | Kits being assembled. |
+| **Partial Assembly** | Some kits assembled. |
+| **Ready to Ship** | Assembled and ready to ship. |
+| **Shipped** | Shipped to the customer. |
+| **Waiting Shipment** | Waiting to ship. |
+| **Completed** | Order complete. |
+| **Partial Return** | Some return kits have come back. |
+| **Cancelled** | Order cancelled. |
+| **Unfulfilled Web** | Web order not fulfilled. |
+| **Auto-Reorder** | Created by auto-reorder. See [Auto-Reorder](/docs/management/auto-reorder). |
+| **Test Order** | Test order. |
+
+<Callout type="info" title="Meanings">
+  The descriptions above are based on each status name and what the app shows. The exact rules that move an order between statuses were not documented in the source materials.
+</Callout>
+
+## The status dropdown on an order
+
+On [Order Details](/docs/orders/order-details), the status dropdown offers: **Ready to Print**, **Printed**, **In Assembly**, **Partial Assembly**, **Ready to Ship**, **Shipped**, **Completed**, **Partial Return** and **Cancelled**. See [Change Order Status](/docs/orders/change-order-status).
+
+## Order flags
+
+Besides the status, orders can carry badges in the list:
+
+- **Needs Review** — use the **Needs Review** button to list them.
+- **Ready to Invoice** — use the **Ready to Invoice** button, or go to [Invoicing](/docs/reports/invoicing).
+- **Amazon** — the order came from Amazon.
+
+<Callout type="warn" title="Differences from the SRS">
+  The SRS describes a shorter status set (Draft, Submitted, Shipped, Received, Completed, Cancelled). The live application uses the statuses on this page.
+</Callout>

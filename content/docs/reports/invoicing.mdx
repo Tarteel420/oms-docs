@@ -1,0 +1,97 @@
+---
+title: Invoicing
+description: Invoice orders once their shipment is moving, and review past invoices.
+---
+
+Select **Invoicing** under **Overview**. The page has two tabs: **Ready to Invoice** and **Invoices Report**.
+
+<Callout type="info" title="Amazon and Shopify">
+  Amazon and Shopify orders are billed on those platforms and are excluded from Invoicing.
+</Callout>
+
+## Ready to Invoice tab
+
+Lists orders whose shipment is moving and are ready to bill. The count (for example **404 ready**) is shown at the top right.
+
+<Screenshot
+  file="reports/invoicing-ready.png"
+  title="Invoicing — Ready to Invoice"
+  description="The Ready to Invoice tab with search, the Ready date filter, the ready count, Mark Invoiced, and the list of orders with an Invoice button on each row."
+/>
+
+| Column | Shows |
+| --- | --- |
+| **Order #** | The order number. |
+| **Customer** | Who to bill. |
+| **PO #** | The customer's PO number, or **—**. |
+| **Ready** | How long the order has been ready, for example **4d ago**. |
+| **Total** | The order value. |
+| **Invoice** | The **Invoice…** button. |
+
+Filter with **Search customer, PO, order #…** and the **Ready date** range.
+
+### Invoice one order
+
+<Steps>
+<Step>
+### Open the invoice panel
+
+Select **Invoice…** on the order's row. The **Invoice — Order #…** panel opens on the right.
+</Step>
+<Step>
+### Enter the invoice details
+
+- **Invoice #** — the invoice number.
+- **Document date** — defaults to today.
+- **Email status** — **Not sent** or **Sent**.
+- **C.A. Remarks** — optional remarks.
+</Step>
+<Step>
+### Save
+
+Select **Save & Mark Invoiced**. The order leaves the Ready to Invoice list and appears in the Invoices Report.
+</Step>
+</Steps>
+
+<Screenshot
+  file="reports/invoice-drawer.png"
+  title="Invoice panel"
+  description="The Invoice — Order panel with Invoice #, Document date, Email status and C.A. Remarks, and the Save & Mark Invoiced button."
+/>
+
+### Mark several orders invoiced
+
+Tick the checkboxes for the orders, then select **Mark Invoiced**.
+
+### Invoice before tracking confirms movement
+
+On an order's page, the **Invoicing** card shows **Awaiting tracking** until tracking confirms the shipment is moving. Select **Add invoice** to invoice it straight away. See [Order Details](/docs/orders/order-details).
+
+## Invoices Report tab
+
+Shows invoices that have been generated.
+
+<Screenshot
+  file="reports/invoices-report.png"
+  title="Invoicing — Invoices Report"
+  description="The Invoices Report tab with the All / Last 24h / Last 7 days / Custom range filters, the total amount and invoice count, and the invoice list."
+/>
+
+- Filter with **All**, **Last 24h**, **Last 7 days** or a **Custom range**.
+- The total amount and number of invoices for the period are shown at the top right.
+
+| Column | Shows |
+| --- | --- |
+| **Order #** | The order. |
+| **Customer** | Who was billed. |
+| **Invoice #** | The invoice number. |
+| **Doc Date** | The document date. |
+| **Email** | Email status, for example **Sent**. |
+| **C.A. Remarks** | Remarks, for example **Created**. |
+| **Invoiced By** | The user who invoiced it. |
+| **Amount** | The invoiced amount. |
+
+## Related pages
+
+- [Consolidated Invoice](/docs/reports/consolidated-invoice)
+- [Safety-Kleen Report](/docs/reports/safety-kleen-report)

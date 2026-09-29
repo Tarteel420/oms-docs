@@ -1,0 +1,17 @@
+{
+  "title": "Reports",
+  "root": true,
+  "pages": [
+    "index",
+    "invoicing",
+    "---Reports---",
+    "shipping-analytics",
+    "safety-kleen-report",
+    "consolidated-invoice",
+    "recycling-annual-report",
+    "certificate-of-recycling",
+    "---More---",
+    "exporting-reports",
+    "other-specified-reports"
+  ]
+}

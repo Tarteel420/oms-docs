@@ -1,0 +1,4 @@
+{
+  "title": "Customer Ordering",
+  "pages": ["index", "browse-kits", "cart-and-checkout", "my-orders-and-tracking"]
+}

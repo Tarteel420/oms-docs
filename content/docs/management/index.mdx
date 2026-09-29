@@ -1,0 +1,43 @@
+---
+title: Account Hierarchy
+description: How distributors, resellers and customers relate to each other.
+---
+
+EZ-OMS organizes the businesses it serves into tiers. Every order belongs to a **distributor**, and optionally a **reseller**, and is shipped to a **customer**.
+
+## The tiers
+
+```
+Distributor        e.g. a large recycling company
+ ├── Reseller      sells kits on to its own customers
+ │    └── Customer
+ └── Customer      the end user who fills and returns kits
+```
+
+For example, a large distributor such as American Lamp Recycling provides kits to its customers and resellers, and the resellers sell them on further.
+
+| Account | Created by | Can manage |
+| --- | --- | --- |
+| **Distributor** | Admin | Its own resellers, customers, orders and product pricing. Can be given its own login. |
+| **Reseller** | Distributor or Admin | Its own customers and their orders. |
+| **Customer** | Distributor or Admin | Its own account; can view its own orders. |
+
+## Data is kept separate
+
+Each account only sees its own data:
+
+- Distributors cannot see other distributors' data.
+- Customers only see their own orders and kits.
+- Admins can see all data.
+
+## Manage accounts
+
+All account pages are under **Management Pages** in the sidebar.
+
+<Cards>
+  <Card title="Distributors" href="/docs/management/distributors" description="Create and manage distributor accounts." />
+  <Card title="Auto-Reorder" href="/docs/management/auto-reorder" description="Automatic replacement orders when kits come back." />
+  <Card title="Resellers" href="/docs/management/resellers" description="Create and manage resellers under a distributor." />
+  <Card title="Customers" href="/docs/management/customers" description="Create and manage end-customer accounts." />
+  <Card title="User Management" href="/docs/management/user-management" description="Manage the people who log in to EZ-OMS." />
+</Cards>

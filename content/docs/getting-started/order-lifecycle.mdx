@@ -1,0 +1,78 @@
+---
+title: The Order Lifecycle
+description: How a recycling kit order moves through EZ-OMS from start to finish.
+---
+
+## At a glance
+
+```
+Order arrives → Bundles & kits → Labels → Printed → Assembly (Scan ID)
+   → Ready to Ship → Shipped → Invoiced → Kits returned → Certificate issued
+```
+
+## Stage by stage
+
+<Steps>
+<Step>
+### 1. The order arrives
+
+From Amazon, Shopify, email, Safety-Kleen, auto-reorder, or entered with **New Order**.
+
+[Order Sources](/docs/orders/order-sources) · [Create an Order](/docs/orders/create-an-order)
+</Step>
+<Step>
+### 2. Bundles, kits and tracking
+
+The order is split into bundles and return kits, each kit with a container number and tracking number. Statuses along the way include **Awaiting Tracking**, **Assigned Track** and **Waiting Labels**.
+
+[Bundles and Return Kits](/docs/orders/bundles-and-return-kits)
+</Step>
+<Step>
+### 3. Labels are printed
+
+**Ready to Print** → **Printed**. Labels are downloaded with **Download All Labels**.
+
+[Shipping Labels](/docs/orders/shipping-labels)
+</Step>
+<Step>
+### 4. Kits are assembled
+
+Each kit's Unique ID is scanned on **Scan ID** to mark it assembled — **In Assembly** / **Partial Assembly** → **Ready to Ship**.
+
+[Scan Kits](/docs/orders/scan-kits)
+</Step>
+<Step>
+### 5. The order ships
+
+**Shipped**. UPS shipments show live tracking.
+
+[Shipment Tracking](/docs/orders/shipment-tracking)
+</Step>
+<Step>
+### 6. The order is invoiced
+
+Once the shipment is moving, the order appears in **Ready to Invoice**. Amazon and Shopify orders are billed on those platforms instead.
+
+[Invoicing](/docs/reports/invoicing)
+</Step>
+<Step>
+### 7. Kits come back
+
+When a return kit is delivered, its delivery date is recorded. Orders with some kits back can be **Partial Return**; finished orders are **Completed**. Auto-reorder can create a replacement order.
+
+[Return Kits](/docs/returns-processing/return-kits) · [Auto-Reorder](/docs/management/auto-reorder)
+</Step>
+<Step>
+### 8. Certificate of recycling
+
+A certificate is issued for each delivered container. Customers can also download it from the public lookup page.
+
+[Certificate of Recycling](/docs/reports/certificate-of-recycling)
+</Step>
+</Steps>
+
+<Callout type="info">
+  The stages follow the status names and their order in the app. Some orders skip statuses — for example, Amazon orders can go straight to **Awaiting Tracking**.
+</Callout>
+
+See [Order Statuses](/docs/orders/order-statuses) for every status.

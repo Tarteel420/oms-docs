@@ -1,0 +1,70 @@
+---
+title: Bundles and Return Kits
+description: How an order is packed into bundles, and how each return kit is tracked.
+---
+
+Every order is split into **bundles** (what ships out to the customer) and **return kits** (the containers the customer sends back). Both are managed in the **Bundles & Kits** section of [Order Details](/docs/orders/order-details).
+
+## Section buttons
+
+| Button | What it does |
+| --- | --- |
+| **Scan Kits** | Opens the scan page to scan kit Unique IDs. See [Scan Kits](/docs/orders/scan-kits). |
+| **Download All Labels** | Downloads all thermal barcode labels (2×3 inch) and A4 return kit labels for the order. See [Shipping Labels](/docs/orders/shipping-labels). |
+| **Create Bundle** | Adds a bundle. Disabled when the bundle already has all tracking numbers assigned. |
+| **Regenerate Bundles** | Deletes the existing bundles and kits and recreates them with the current rules — for example, the pack multiplier that turns `10-40JM` into 10 kits in 2 bundles. |
+
+<Callout type="error" title="Regenerate Bundles deletes existing kits">
+  Existing bundles, kits and their tracking numbers are removed and recreated. Use it only when the bundles are wrong.
+</Callout>
+
+## Kit Status
+
+A card for each product shows progress, for example **35BT — Kits: 2/2 • Tracked: 2/2** (how many kits exist and how many have tracking numbers).
+
+## Bundles
+
+When an order has several bundles, use the numbered buttons or the **←** / **→** arrows to move between them (for example **Bundle 1 — 1 of 2**). Each bundle shows:
+
+| Field | Meaning |
+| --- | --- |
+| **Shipping Company** | The carrier. |
+| **Tracking Number** | Outbound tracking number for the bundle. |
+| **Ship Date** | When the bundle shipped. |
+| **Weight** | Planned weight. |
+| **Dimensions (L×W×H)** | Box size in inches. |
+| **Actual Weight / Billed Weight** | Weights reported for the shipment. |
+| **Delivery Address** | Where the bundle is going. |
+
+Bundle icons let you **Upload PDF Label**, **Edit Bundle** and **Delete Bundle**.
+
+## Return Kits
+
+Each bundle lists its return kits.
+
+| Column | Meaning |
+| --- | --- |
+| **Container Number** | The kit's unique container ID (also used on the certificate of recycling). |
+| **Order Item** | The product SKU. |
+| **Tracking** | The kit's return tracking number. |
+| **Weight** | Kit weight. |
+| **Delivery Date** | When the returned kit was delivered. |
+| **Delivery Address** | Delivery address. |
+| **Cert. of Recycling** | Certificate for the kit. |
+
+### Return kit actions
+
+| Icon | What it does |
+| --- | --- |
+| Certificate | Generate the certificate of recycling. Only available for delivered items. |
+| **Scan kit unique ID** | Scan this kit. |
+| **Print Label** | Print this kit's label. |
+| **Download Label PDF** | Download this kit's label. |
+| **Edit Tracking** | Change the tracking number. |
+| **Delete Tracking** | Remove the tracking number. |
+
+**Add Another Return Kit** adds a kit to the bundle when allowed.
+
+## What's physically in a kit
+
+See [Kit Contents](/docs/products/kit-contents).

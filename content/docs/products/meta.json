@@ -1,0 +1,5 @@
+{
+  "title": "Products",
+  "root": true,
+  "pages": ["index", "add-a-product", "product-categories", "kit-contents"]
+}

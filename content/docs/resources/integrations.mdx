@@ -1,0 +1,55 @@
+---
+title: Integrations
+description: The external systems EZ-OMS connects to and what each one does.
+---
+
+| System | What it does in EZ-OMS |
+| --- | --- |
+| [ShipNest](#shipnest) | Shipping labels, tracking and order sync. |
+| [Amazon and Shopify](#amazon-and-shopify) | Marketplace orders and products. |
+| [Microsoft Graph (email)](#microsoft-graph-email) | Email and Safety-Kleen mail-back orders. |
+| [GreenLoop](#greenloop) | Warehouse receiving. |
+| [UPS tracking](#ups-tracking) | Live shipment tracking on the order page. |
+| [Email service](#email-service) | Confirmations, notifications and password resets. |
+
+## ShipNest
+
+ShipNest produces shipping labels and tracking numbers for outbound bundles and return kits, and keeps tracking in sync with kit records. Direct connections to carriers are planned for later.
+
+### ShipNest Integration page
+
+Administrators configure the connection on **ShipNest Integration** (`/dashboard/shipnest-integration`). This page isn't in the sidebar.
+
+| Setting | Meaning |
+| --- | --- |
+| **API URL** | The base URL of the ShipNest API instance. |
+| **Service ID** | The ShipNest service identifier. |
+| **Service Username** | The ShipNest service username. |
+| **App Secret** | Required for a new configuration. |
+| **Automatically send new orders to ShipNest** | When ticked, new orders are sent to ShipNest automatically. |
+
+Buttons: **Save Configuration**, **Generate Service Token** and **Import Orders from ShipNest**. The **Integration Status** panel shows whether the connection is configured and whether auto-send is enabled.
+
+<Callout type="warn">
+  Only administrators should change these settings. Never share the App Secret.
+</Callout>
+
+## Amazon and Shopify
+
+Orders placed on Amazon and Shopify are pulled into EZ-OMS through their APIs. They're billed on those platforms, so they're excluded from [Invoicing](/docs/reports/invoicing). See [Order Sources](/docs/orders/order-sources).
+
+## Microsoft Graph (email)
+
+A Microsoft Graph mailbox connection brings in orders that arrive by email and through the Safety-Kleen mail-back system.
+
+## GreenLoop
+
+The warehouse records received products in GreenLoop, which is connected to EZ-OMS. See [GreenLoop Receiving](/docs/returns-processing/greenloop-receiving).
+
+## UPS tracking
+
+Live tracking updates on the order page are available for UPS shipments only, with a **Track on UPS** link. See [Shipment Tracking](/docs/orders/shipment-tracking).
+
+## Email service
+
+Used for order confirmations, tracking notifications where applicable, and password resets.

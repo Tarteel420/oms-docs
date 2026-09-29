@@ -1,0 +1,54 @@
+---
+title: Auto-Reorder
+description: Automatically create a new order when a customer's return kit is received.
+---
+
+Auto-reorder is set per distributor. When it is on, a new order is created automatically whenever a return kit is received — so the customer gets a replacement kit without anyone entering an order.
+
+## How it works
+
+When a return kit is received (its **delivery date** is recorded), a new order tagged **PENDING - AUTOREORDER** is created automatically.
+
+## Turn on auto-reorder
+
+<Steps>
+<Step>
+### Open the settings
+
+On [Distributors](/docs/management/distributors), select the **Auto-reorder kits** icon on the distributor's row.
+</Step>
+<Step>
+### Enable it
+
+Switch on **Enable auto-reorder**.
+</Step>
+<Step>
+### Choose which kits reorder
+
+Pick one option — you can't combine them:
+
+- **All recycling kits** — every product in the distributor's catalog reorders when received.
+- **Selected kits only** — only the products you switch on reorder.
+</Step>
+<Step>
+### Select kits (if "Selected kits only")
+
+Search by product code or description, then switch on **Reorder** for each kit. The badge shows how many are selected. **Select visible** turns on all kits in the current list; **Clear all** turns them all off.
+</Step>
+<Step>
+### Save
+
+Select **Save settings**.
+</Step>
+</Steps>
+
+<Screenshot
+  file="management/auto-reorder.png"
+  title="Auto-reorder kits"
+  description="The Auto-reorder kits dialog with the Enable toggle, the All recycling kits / Selected kits only choice, and the kit list with Reorder switches."
+/>
+
+## What you'll see afterwards
+
+- The **Auto-reorder** column shows the setting, for example **On · selected**.
+- Automatically created orders appear in the [order list](/docs/orders/order-list). The status list includes **Auto-Reorder**.

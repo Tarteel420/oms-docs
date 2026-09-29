@@ -1,0 +1,5 @@
+{
+  "title": "Accounts",
+  "root": true,
+  "pages": ["index", "distributors", "auto-reorder", "resellers", "customers", "---Staff---", "user-management"]
+}

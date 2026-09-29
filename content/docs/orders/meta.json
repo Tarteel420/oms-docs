@@ -1,0 +1,26 @@
+{
+  "title": "Orders",
+  "root": true,
+  "pages": [
+    "index",
+    "order-sources",
+    "order-list",
+    "order-details",
+    "---Creating Orders---",
+    "create-an-order",
+    "order-items",
+    "---Fulfilment---",
+    "bundles-and-return-kits",
+    "shipping-labels",
+    "order-documents",
+    "scan-kits",
+    "shipment-tracking",
+    "---Managing Orders---",
+    "order-statuses",
+    "change-order-status",
+    "update-or-cancel-an-order",
+    "order-notes",
+    "---Customer Self-Service---",
+    "customer-ordering"
+  ]
+}

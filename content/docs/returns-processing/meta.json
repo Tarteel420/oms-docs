@@ -1,0 +1,14 @@
+{
+  "title": "Returns",
+  "root": true,
+  "pages": [
+    "index",
+    "---Return Kits---",
+    "return-kits",
+    "greenloop-receiving",
+    "customer-cor-lookup",
+    "---Return Processing---",
+    "container-processing",
+    "product-processing"
+  ]
+}
