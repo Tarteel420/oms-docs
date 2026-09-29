@@ -3,11 +3,11 @@
   "root": true,
   "pages": [
     "index",
-    "what-is-ez-oms",
+    "what-is-OMS",
     "key-concepts",
     "user-roles",
     "logging-in",
-    "navigating-ez-oms",
+    "navigating-OMS",
     "---How It Works---",
     "order-lifecycle"
   ]

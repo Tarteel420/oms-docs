@@ -5,10 +5,10 @@ import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
   title: {
-    template: '%s | EZ-OMS Docs',
-    default: 'EZ-OMS Docs',
+    template: '%s | OMS Docs',
+    default: 'OMS Docs',
   },
-  description: 'User guide for EZ-OMS, the recycling kit order management system.',
+  description: 'User guide for OMS, the recycling kit order management system.',
 };
 
 export default function Layout({ children }: LayoutProps<'/'>) {

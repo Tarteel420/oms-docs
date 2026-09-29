@@ -2,7 +2,7 @@
 @import 'fumadocs-ui/css/neutral.css';
 @import 'fumadocs-ui/css/preset.css';
 
-/* EZ-OMS brand: navy primary + green accent */
+/* OMS brand: navy primary + green accent */
 :root {
   --color-brand: hsl(152, 62%, 38%);
   --color-fd-primary: hsl(222, 62%, 30%);

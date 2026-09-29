@@ -1,6 +1,6 @@
-# EZ-OMS Docs
+# OMS Docs
 
-User guide for **EZ-OMS**, the recycling kit order management system, built with [Fumadocs](https://fumadocs.dev) (Next.js 16 + MDX).
+User guide for **OMS**, the recycling kit order management system, built with [Fumadocs](https://fumadocs.dev) (Next.js 16 + MDX).
 
 ## Run locally
 
@@ -58,6 +58,6 @@ Available MDX components: `Callout`, `Cards`/`Card`, `Steps`/`Step`, `Tabs`/`Tab
 
 ## Sources
 
-Content is based on a read-only walkthrough of the live EZ-OMS app (Sep 2026), the EZ-OMS demo (23 Sep 2026) and the EZ-OMS SRS (v1.0). Where they differ, the live app wins. See **Resources → Documentation Notes**.
+Content is based on a read-only walkthrough of the live OMS app (Sep 2026), the OMS demo (23 Sep 2026) and the OMS SRS (v1.0). Where they differ, the live app wins. See **Resources → Documentation Notes**.
 
 > Screenshots in `public/screenshots/` were captured from the live app and may contain real customer and order details. Review before publishing outside the company.
